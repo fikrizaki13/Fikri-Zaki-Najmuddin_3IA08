@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Pembelian CRUD</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>Masukan Pembelian Anda</h3>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">Kode Produk</label>
+                        <input type="text"name="productCode" id="productCode">
+                    </div>
+                    <div>
+                        <label for="product">Nama Produk</label>
+                        <input type="text" name="product" id="product">
+                    </div>
+                    <div>
+                        <label for="qty" >Jumlah</label>
+                        <input type="number" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="perPrice">Harga</label>
+                        <input type="number" name="perPrice" id="perPrice">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Kode Produk</th>
+                                <th>Nama Produk</th>
+                                <th>Jumlah</th>
+                                <th>Harga</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+
+                        </tbody>
+
+                    </table>
+                </td>
+
+            </td>
+        </tr>
+    </table>
+    <footer>Fikri Zaki Najmuddin</footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
